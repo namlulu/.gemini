@@ -1,0 +1,18 @@
+# Sensitive and machine-specific configuration
+google_accounts.json
+oauth_creds.json
+installation_id
+state.json
+trustedFolders.json
+projects.json
+settings.json
+
+# Temporary data and history
+tmp/
+history/
+
+# OS generated files
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
