@@ -6,6 +6,7 @@ state.json
 trustedFolders.json
 projects.json
 settings.json
+acknowledgments
 
 # Temporary data and history
 tmp/
