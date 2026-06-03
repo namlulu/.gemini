@@ -4,6 +4,7 @@
 # Unignore shareable root documentation and git config
 !.gitignore
 !README.md
+!GEMINI.md
 
 # Unignore custom agent configurations and prompts
 !/config/
@@ -11,6 +12,13 @@
 !/config/agents/**
 !/config/prompts/
 !/config/prompts/**
+!/config/skills/
+!/config/skills/**
+!/config/plugins/
+!/config/plugins/**
+!/config/sidecars/
+!/config/sidecars/**
+!/config/hooks.json
 
 # Explicitly ignore machine-specific configs and state in config/
 /config/mcp_config.json
