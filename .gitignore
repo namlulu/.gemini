@@ -14,11 +14,16 @@
 !/config/prompts/**
 !/config/skills/
 !/config/skills/**
-!/config/plugins/
-!/config/plugins/**
 !/config/sidecars/
 !/config/sidecars/**
 !/config/hooks.json
+!/config/plugins/
+!/config/plugins/**
+
+# Unignore new global agents and markdown prompts under antigravity-cli
+!/antigravity-cli/
+!/antigravity-cli/agents/
+!/antigravity-cli/agents/**
 
 # Explicitly ignore machine-specific configs and state in config/
 /config/mcp_config.json

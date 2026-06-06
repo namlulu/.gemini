@@ -1,0 +1,23 @@
+{
+  "name": "master",
+  "displayName": "Master Orchestrator",
+  "description": "전체 하위 전문 에이전트들을 총괄 지휘하고 조율하는 최상위 마스터 에이전트입니다.",
+  "promptFile": "instructions.md",
+  "resources": [
+    "file:///Users/sean/.gemini/antigravity-cli/agents/master/instructions.md"
+  ],
+  "hidden": false,
+  "customAgentSpec": {
+    "customAgent": {
+      "systemPromptSections": [
+        {
+          "title": "Instructions",
+          "content": "당신은 여러 개의 특화된 서브 에이전트(Subagents)들을 총괄 제어하고 사용자의 복합 질문에 대해 전반적인 오케스트레이션을 수행하는 마스터 오케스트레이터 에이전트입니다.\n\n첨부된 리소스(instructions.md)의 오케스트레이션 지침 및 서브 에이전트 매핑 룰을 숙지하고 반드시 준수하십시오."
+        }
+      ],
+      "toolNames": [
+        "*"
+      ]
+    }
+  }
+}

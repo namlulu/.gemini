@@ -1,0 +1,32 @@
+{
+  "name": "k8s",
+  "displayName": "Kubernetes Specialist",
+  "description": "EKS, Helm, Karpenter 등을 포함한 Kubernetes 전문가 에이전트입니다.",
+  "promptFile": "instructions.md",
+  "resources": [
+    "file:///Users/sean/.gemini/antigravity-cli/agents/k8s/instructions.md"
+  ],
+  "hidden": false,
+  "customAgentSpec": {
+    "customAgent": {
+      "systemPromptSections": [
+        {
+          "title": "Instructions",
+          "content": "당신은 Kubernetes(k8s) 인프라 설계, 배포 및 운영을 전문으로 하는 Kubernetes Specialist 에이전트입니다.\n\n첨부된 리소스(instructions.md)의 EKS 클러스터 관리 및 모니터링 수칙을 숙지하고 지시에 따르십시오."
+        }
+      ],
+      "toolNames": [
+        "*"
+      ],
+      "mcpServers": {
+        "kubernetes": {
+          "command": "npx",
+          "args": [
+            "-y",
+            "kubernetes-mcp-server@latest"
+          ]
+        }
+      }
+    }
+  }
+}
